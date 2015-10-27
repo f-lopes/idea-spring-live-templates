@@ -12,7 +12,7 @@
       <option name="COMPLETION" value="false" />
     </context>
   </template>
-  <template name="sprauto" value="@Autowired&#10;private final $BEAN_TYPE$ $BEAN_NAME$" description="Autowire a new Spring Bean into reference" toReformat="false" toShortenFQNames="true">
+  <template name="sprauto" value="@Autowired&#10;private final $BEAN_TYPE$ $BEAN_NAME$" description="Autowire a new Spring Bean" toReformat="false" toShortenFQNames="true">
     <variable name="BEAN_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="BEAN_NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
