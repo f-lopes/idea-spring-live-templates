@@ -1,0 +1,36 @@
+<templateSet group="Spring">
+  <template name="sprbean" value="@Bean&#10;public $BEAN_TYPE$ $BEAN_NAME$() {&#10;    &#10;}" description="Creates a new Java Spring Bean definition" toReformat="false" toShortenFQNames="true">
+    <variable name="BEAN_TYPE" expression="methodReturnType()" defaultValue="" alwaysStopAt="true" />
+    <variable name="BEAN_NAME" expression="capitalize(suggestVariableName())" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+  <template name="sprauto" value="@Autowired&#10;private final $BEAN_TYPE$ $BEAN_NAME$" description="Autowire a new Spring Bean into reference" toReformat="false" toShortenFQNames="true">
+    <variable name="BEAN_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BEAN_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="@reqmap" value="@RequestMapping(&quot;$MAPPING_URL$&quot;)&#10;public $RETURN_TYPE$ $METHOD_NAME$() {&#10;    &#10;}" description="Creates a new Spring controller method annotated with @RequestMapping" toReformat="false" toShortenFQNames="true">
+    <variable name="MAPPING_URL" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RETURN_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="METHOD_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+    </context>
+  </template>
+</templateSet>
