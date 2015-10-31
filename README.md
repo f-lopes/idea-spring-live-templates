@@ -11,3 +11,6 @@ https://www.jetbrains.com/idea/help/live-templates.html
 * **@reqmap** : Creates a new Spring controller method annotated with @RequestMapping
 * **sprauto** : Autowire a new Spring Bean
 * **sprbean** : Creates a new Java Spring Bean definition
+
+# Contributing
+Feel free to contribute to make better templates.
